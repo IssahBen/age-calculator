@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="flex flex-col items-center bg-off_white justify-center h-screen w-screen">
+        <div class="flex flex-col items-center  bg-white w-9/12   lg:w-4/12 md:w-5/12 rounded-3xl">
+            <form action="" id="form" class="flex flex-col p-10">
+                <div class="flex  space-x-10 mt-10 mb-12 ">
+                    <div class="flex flex-col  ">
+                        <label id="day" for="dayerror" class="text-smokey_grey font-semibold">Day</label>
+                        <input type="text" id="day"
+                            class="font-[32px]rounded-lg border-2 border-smokey_grey w-20 h-14 rounded-xl text-center  font-black text-xl">
+                        <p id="dayerror" class="text-xs hidden  text-red-400 w-24">Must be a valid day </p>
+
+                    </div>
+                    <div class="flex flex-col ">
+                        <label id="month" for="montherror" class="text-smokey_grey font-semibold">Month</label>
+                        <input type="text" id="month"
+                            class="font-[32px]rounded-lg border-2 border-smokey_grey w-20 h-14 rounded-xl text-center  font-black text-xl">
+                        <p id="montherror" class="text-xs hidden  text-red-400 w-24">Must be a valid Month </p>
+
+                    </div>
+                    <div class="flex flex-col ">
+                        <label id="year" for="yearerror" class="text-smokey_grey font-semibold">Year</label>
+                        <input type="text" id="year"
+                            class="font-[32px]rounded-lg border-2 border-smokey_grey w-20 h-14 rounded-xl text-center  font-black text-xl">
+                        <p id="yearerror" class="text-xs hidden text-red-400 w-24">Must be a valid Year </p>
+
+                    </div>
+                </div>
+
+                <div id="after_submit" class="flex   hidden items-center">
+                    <div class="border-t-2 border-smokey_grey w-32"></div>
+                    <button type="submit" hover:cursor-pointer"><img src="assets/images/icon-arrow.svg" alt=""
+                            class="rounded-full bg-purple p-4 "></button>
+                    <div class="border-t-2 border-smokey_grey w-32"></div>
+
+                </div>
+                <div id="before_submit" class="flex   items-center">
+                    <div class="border-t-2 border-smokey_grey w-32"></div>
+
+                    <div class="border-t-2 border-smokey_grey w-32"></div>
+                    <button type="submit" hover:cursor-pointer"><img src="assets/images/icon-arrow.svg" alt=""
+                            class="rounded-full bg-purple p-4 "></button>
+
+                </div>
+            </form>
+
+            <div class="flex flex-col w-10/12 space-x-1 mb-10">
+                <div class="flex  flex-start  items-center  space-x-4 ">
+                    <span id="years" class="flex space-x-2 font-black text-purple text-4xl">
+                        <div class="border-8  bg-purple border-purple w-8 h-4"></div>
+                        <div class="border-8  bg-purple  border-purple w-8 h-4"></div>
+                    </span>
+                    <p class="text-6xl font-sans font-black ">
+                        years
+                    </p>
+
+                </div>
+                <div class="flex  flex-start  items-center  space-x-4 ">
+                    <span id="months" class="flex space-x-2 font-black text-purple text-4xl">
+                        <div class="border-8  bg-purple border-purple w-8 h-4"></div>
+                        <div class="border-8  bg-purple   border-purple w-8 h-4"></div>
+                    </span>
+                    <p class="text-6xl font-sans font-black ">
+                        months
+                    </p>
+
+                </div>
+                <div class="flex  flex-start  items-center  space-x-4 ">
+                    <span id="days" class="flex space-x-2 font-black text-purple text-4xl">
+                        <div class="border-8  bg-purple border-purple w-8 h-4"></div>
+                        <div class="border-8  bg-purple  border-purple w-8 h-4"></div>
+                    </span>
+                    <p class="text-6xl font-sans font-black ">
+                        days
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
